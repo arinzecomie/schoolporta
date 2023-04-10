@@ -1,0 +1,65 @@
+.b_ground{
+background-color:purple;
+margin-bottom:5px;
+margin-top:5px;
+color:#fff !important;
+}
+
+
+/* The Modal (background) */
+.modal, .notif {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 9998; /* Sit on top */
+    padding-top: 10px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto !important; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+	top:10%;
+	bottom:5%;
+    background-color: #fefefe;
+    margin: auto;
+    border: 1px solid #888;
+	position:fixed !important;
+	height:100%;
+}
+.modal-content-notif {
+	top:5%;
+	bottom:15%;
+    background-color: #fefefe;
+    margin: auto;
+    border: 1px solid #888;
+	position:fixed;
+}
+
+/* The Close Button */
+.close, .close_notif {
+    color: black;
+    float: right;
+    font-size: 40px !important;
+    font-weight: bold;
+	margin-right:20px;
+	margin-top:5px;
+}
+.close_notif:hover{
+	cursor:pointer;
+	color:grey;
+}
+#my_form{
+	display:block;
+	height:100%;
+	overflow-y:auto;
+	width:100%;
+}
+#notif_display{
+	display:block;
+	position:relative;
+}

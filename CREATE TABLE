@@ -1,0 +1,114 @@
+CREATE TABLE `tests` (
+  `id` int(11) NOT NULL,
+  `subject` varchar(50) NOT NULL,
+  `ft` varchar(15) NOT NULL,
+  `st` varchar(100) NOT NULL,
+  `assin` varchar(100) NOT NULL,
+  `exam` varchar(100) NOT NULL,
+  `avra` varchar(100) NOT NULL,
+  `gavr` varchar(100) NOT NULL,
+  `fg` varchar(100) NOT NULL,
+   `sg` varchar(100) NOT NULL
+  
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
+INSERT INTO `tests` (`subject`, `ft`, `st`, `assin`, `exam`, `avra`,`gavr`, `fg`, `sg`) VALUES
+('Agricultural Science', 10, 10, 10, 62, 92,'A', '3 out of 40' ,'3 out of 116'),
+('Basic Science', 10, 10, 10, 62, 92,'A', '3 out of 40' ,'3 out of 116'),
+('Basic Technology' , 10, 10, 10, 62, 92,'A', '3 out of 40' ,'3 out of 116'),
+('Business Studies' , 10, 10, 10, 62, 92,'A', '3 out of 40' ,'3 out of 116'),
+('Christian Religious
+Knowledge'
+, 10, 10, 10, 62, 92,'A', '3 out of 40' ,'3 out of 116'),
+('Civic Education' , 10, 10, 10, 62, 92,'A', '3 out of 40' ,'3 out of 116'),
+('Computer Science/ICT' , 10, 10, 10, 62, 92,'A', '3 out of 40' ,'3 out of 116'),
+('English Language' , 10, 10, 10, 62, 92,'A', '3 out of 40' ,'3 out of 116'),
+('Fine Art' , 10, 10, 10, 62, 92,'A', '3 out of 40' ,'3 out of 116'),
+('French' , 10, 10, 10, 62, 92,'A', '3 out of 40' ,'3 out of 116'),
+('Home Economics' , 10, 10, 10, 62, 92,'A', '3 out of 40' ,'3 out of 116'),
+('Igbo ', 10, 10, 10, 62, 92,'A', '3 out of 40' ,'3 out of 116'),
+('Latin ', 10, 10, 10, 62, 92,'A', '3 out of 40' ,'3 out of 116'),
+('Literature in English' , 10, 10, 10, 62, 92,'A', '3 out of 40' ,'3 out of 116'),
+('Liturgy' , 10, 10, 10, 62, 92,'A', '3 out of 40' ,'3 out of 116'),
+('Mathematics' , 10, 10, 10, 62, 92,'A', '3 out of 40' ,'3 out of 116'),
+('Music' , 10, 10, 10, 62, 92,'A', '3 out of 40' ,'3 out of 116'),
+('Physical and Health
+Education'
+, 10, 10, 10, 62, 92,'A', '3 out of 40' ,'3 out of 116'),
+('Social Studies' , 10, 10, 10, 62, 92,'A', '3 out of 40' ,'3 out of 116');
+
+
+
+
+<?php
+session_start();
+ include('../library/library.php');
+
+if(isset($_POST)){
+     $mailhead= $_POST["posthead"];
+	 $mailcont=$_POST["cont"];
+	 $x = 0;
+}
+if(isset($_GET['compi'])){
+    $db->dele_input("SELECT * FROM admin_login WHERE 1");
+    $resend = $db->return_sth()->fetch();
+            $x = $resend['lastid'] - 1;
+             $mailhead= $resend['msgsub'];
+	         $mailcont=  $resend['msg'];
+}
+ 
+ 
+$STH = $db->dele_input("SELECT id, email, username FROM users WHERE id < $x ");
+  
+		//fetch user  email
+		$i = 0;
+		while($row =$db->return_sth()->fetch()) {
+			$u_mail=$row["email"];
+			$u_name=$row["username"];
+		//	echo $u_mail." ".	$u_name." <br>";		
+		 
+		 $sender ="support@btcmultiples247.club";
+         $headers = "From:Support@btcmultiples247.club\r\n";
+        $headers .= "MIME-Version: 1.0\r\n";
+        $headers .= "Content-type:text/html; charset=iso-8859-1\r\n";
+	
+	$message = "<HTML>
+	            <BODY>
+	                <h4> Hello  $u_name </h4>
+	                <b>$mailhead</b> 
+                    
+					<p> $mailcont </p>
+                    <b> From <a href='https://btcmultiples247.club/'>btcmultiples247.club</a></b>
+                </BODY>
+               </HTML>";
+
+//	echo $message;
+       $master_email= $u_mail; 
+	   $subject = "Btcmultiples247 Notification";
+	  if($i < 50){
+	  // mail($master_email, $subject, $message, $headers);
+echo $i.' lest then 50 <br>';
+	  $u_id=$row["id"];
+	  $i++;
+	  $rem = 0;
+	  }else{
+	 echo 'greater then 50 <br>';
+	   $rem++;   
+	  }
+	  
+		}
+		If($x){
+		    //get
+		   $db->dele_input("UPDATE admin_login SET lastid = 0 ,remain = 0,mgssub = 0,  msg = 0 WHERE 1");
+		    $_session["bmsg"]="your bulk mail has succesfuly complected!!";
+		}else{
+		    //post
+		    $db->dele_input("UPDATE admin_login SET lastid = $u_id ,remain = $rem,mgssub = '$mailhead',  msg = '$mailcont' WHERE 1");
+		 	$_session["bmsg"]="your bulk mail was succesfuly sent 49 mails now. Please wait for an hour to sent the remaining $rem mails";
+		}
+
+
+	 echo "the last id is $u_id as it remain $rem ";
+ //echo ' <script> window.location.href = "https://btcmultiples247.club/admin/my_admin.php"<script>';
+?>

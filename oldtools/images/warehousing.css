@@ -1,0 +1,37 @@
+#menu_list li:hover{background-color:#000; }
+ #menu_item{color:white;}
+ #menu_list a{background-color:none;}
+ #dte{width:100%; margin-top:0px;}
+ #ul_dte li{list-style:none; display:inline; float:right; padding:5px; background-color:#0066cc; 
+ border-radius:5px; margin-left:2px; color:white;
+      font-family:san-serif; font-weight:bold;}
+  #ul_dte li:hover{background-color:black;}
+.caption{background-color:grey; height:250px; color:white;}
+ .td{background-color:orange; padding-left:5px;}
+ #bill{background-color:lightgrey; margin:5px; float:right;
+  min-height:400px; margin-top:10px; min-width:250px; width:45%; display:block; position:relative; border-radius:5px; margin-left:10px;}
+ #regform{text-align:center;} 
+ #r-post{background-color:#660000;margin-top:0px;text-align:center;color:white;font-weight:bold; width:100%;}
+#col_div, #col_div2, #col_div3, #col_div3_c {width:170px; margin:5px; background-color:#ccd9ff; border-radius:8px;
+           height:210px; text-align:center; float:left;}
+		  #col_div2{width:60%;}
+		  #col_div3{float:right; width:200px; color:#cc0052;}
+		  #col_div3_c{float:left; width:200px; color:#cc0052; height:auto; background-color:#b3c6ff;}
+		  .pck_button{border: 3px solid #600000; padding:4px; border-radius:5px; font-weight:bold; }
+		  #footer{clear:both; background-color:black; color:red;margin-top:20px;}
+                   .caption {color:#ff80df; font-weight:bold; margin:20px;}
+				   #wlcm{display:block; position:relative;}
+				   
+				   #div_footer{background-color:black;width:101%;padding:0.5px 0.5px; color:yellow; 
+  text-align:center;clear:both; position:relative; height:auto;}
+                         #ul_footer li{color:white;display:inline; }
+#ul_footer li a{color:white;}
+              #ul_footer{text-align:center;}
+			  #welcomeDate{float:left; min-width:300px;}
+			  #faq{background-color:white; width:100%; padding:5px;}
+			  #main_img{width:102%; height:98%; padding:2px;}
+			  #sub_h{color:red; font-weight:bold;}
+#wrap{margin:auto; width:80%;}
+#wrap1{margin:auto; width:100%;}
+#wrap_admin{margin:auto; width:50%;}
+				  

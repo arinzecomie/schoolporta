@@ -1,0 +1,229 @@
+@font-face {
+	font-family: fontscorecomttwcenmt;
+	src: local("fontscorecomttwcenmt"), url(fonts/fontscorecomttwcenmt.woff) format("woff"), url(fonts/fontscorecomttwcenmt.ttf) format("truetype");
+}
+* {
+	margin: 0px; padding: 0px;
+}
+.fontsforweb_fontid_13141 {
+	font-family: "fontscorecomttwcenmt" !important;
+}
+body {
+	color: rgb(0, 0, 0); font-family: fontscorecomttwcenmt, Tahoma, Geneva, sans-serif; font-size: 16px;
+}
+#topline {
+	background: rgb(6, 79, 159); width: 100%; height: 128px; overflow: hidden; display: block; min-width: 1050px;
+}
+#logo_bar {
+	margin: 0px auto; width: 1050px; height: 128px; overflow: hidden; display: block;
+}
+#logo {
+	background: url("images/logo.png") no-repeat 0% 60%; width: 400px; height: 128px; float: left; display: block;
+}
+header {
+	background: url("images/header.jpg") no-repeat 50% 0px / cover; margin: 0px auto; width: 100%; height: 453px; border-top-color: rgb(240, 211, 28); border-bottom-color: rgb(240, 211, 28); border-top-width: 15px; border-bottom-width: 15px; border-top-style: solid; border-bottom-style: solid; display: block; min-width: 1050px;
+}
+#header_img {
+	background: url("images/headerbg.jpg") no-repeat 50% 50%; margin: 0px auto; width: 1050px; height: 453px; display: block;
+}
+#stats_box {
+	background: url("images/stats_box.png") no-repeat; width: 314px; height: 381px; margin-top: 18px; float: left; display: block;
+}
+.sbox {
+	margin: 130px auto 0px; width: 294px; overflow: hidden; display: block;
+}
+nav {
+	width: 650px; height: 128px; float: right; display: block;
+}
+#mainmenu {
+	margin: 0px auto; width: 650px; height: 128px; font-size: 18px; font-weight: normal; display: block; position: absolute; z-index: 100;
+}
+#mainmenu ul {
+	margin: 0px; padding: 0px; width: auto; list-style-type: none; position: absolute;
+}
+#mainmenu ul li {
+	margin: 0px; float: left; display: block;
+}
+#mainmenu ul li a {
+	margin: 0px 2px; padding: 0px 10px; height: 97px; text-align: center; color: rgb(255, 255, 255); line-height: 67px; text-decoration: none; border-top-color: rgb(6, 79, 159); border-top-width: 31px; border-top-style: solid; float: left; display: block; text-shadow: 0px 1px 0px #000;
+}
+#mainmenu ul li a:hover {
+	background: rgb(20, 41, 154); color: rgb(255, 255, 255); border-top-color: rgb(240, 211, 28); border-top-width: 31px; border-top-style: solid; text-shadow: none;
+}
+#mainmenu ul li a.current:hover {
+	background: rgb(20, 41, 154); color: rgb(255, 255, 255); border-top-color: rgb(240, 211, 28); border-top-width: 31px; border-top-style: solid; text-shadow: none;
+}
+#mainmenu ul li a.current {
+	background: rgb(20, 41, 154); color: rgb(255, 255, 255); border-top-color: rgb(240, 211, 28); border-top-width: 31px; border-top-style: solid; text-shadow: none;
+}
+img {
+	border: currentColor; border-image: none;
+}
+a {
+	transition:background 250ms ease-in-out !important; color: rgb(0, 0, 0);
+}
+a:hover {
+	transition:background 250ms ease-in-out !important; color: rgb(0, 0, 0);
+}
+#buttons_bar {
+	background: url("images/dots.png") repeat-x bottom rgb(6, 79, 159); width: 100%; height: 93px; overflow: hidden; display: block;
+}
+#container {
+	margin: 5px auto; width: 1050px; height: 100%; overflow: hidden; display: block;
+}
+#login_bar {
+	margin: 0px auto; width: 1040px; height: 82px; overflow: hidden; display: block;
+}
+#right_col {
+	width: 335px; height: 100%; margin-top: 5px; float: right; display: block;
+}
+#main_col {
+	padding: 5px 10px; width: 680px; height: 100%; color: rgb(0, 0, 0); float: left; display: block;
+}
+.inpts {
+	background: rgb(20, 41, 154); padding: 18px 8px; border: 1px solid rgb(255, 255, 255); border-image: none; color: rgb(255, 255, 255); font-size: 14px;
+}
+.inpts_y {
+	background: rgb(240, 211, 28); padding: 12px 8px; border: 1px solid rgb(255, 255, 255); border-image: none; color: rgb(0, 0, 0); font-size: 14px; margin-top: 2px;
+}
+.user {
+	background: url("images/user_ic.png") no-repeat 15px 50% rgb(20, 41, 154); padding: 18px 8px 18px 55px; border: 1px solid rgb(255, 255, 255); border-image: none; color: rgb(255, 255, 255); font-size: 14px;
+}
+.pass {
+	background: url("images/pass_ic.png") no-repeat 15px 50% rgb(20, 41, 154); padding: 18px 8px 18px 55px; border: 1px solid rgb(255, 255, 255); border-image: none; color: rgb(255, 255, 255); font-size: 14px;
+}
+.sbmt {
+	background: rgb(17, 40, 156); border: currentColor; transition:background 250ms ease-in-out; border-image: none; height: 44px; text-align: center; color: rgb(255, 255, 255); line-height: 44px; font-size: 18px; cursor: pointer; min-width: 132px;
+}
+.sbmt:hover {
+	background: rgb(242, 212, 10); border: currentColor; transition:background 250ms ease-in-out; border-image: none; height: 44px; text-align: center; color: rgb(0, 0, 0); line-height: 44px; font-size: 18px; cursor: pointer; min-width: 132px;
+}
+.butw {
+	background: rgb(20, 41, 154); border: currentColor; border-image: none; width: 130px; height: 46px; text-align: center; color: rgb(255, 255, 255); line-height: 46px; font-size: 18px; text-decoration: none; display: block; cursor: pointer;
+}
+.butw:hover {
+	background: rgb(240, 211, 28); border: currentColor; border-image: none; width: 130px; height: 46px; text-align: center; color: rgb(0, 0, 0); line-height: 46px; font-size: 18px; display: block; cursor: pointer;
+}
+td.inheader {
+	background: rgb(20, 41, 154); padding: 13px 5px; text-align: center; color: rgb(255, 255, 255); font-size: 18px; border-bottom-color: rgb(6, 79, 159); border-bottom-width: 4px; border-bottom-style: solid;
+}
+td.item {
+	background: rgb(240, 211, 28); padding: 10px 5px; color: rgb(0, 0, 0);
+}
+h3 {
+	background: rgb(240, 211, 28); height: 83px; text-align: left; color: rgb(0, 0, 0); line-height: 83px; padding-left: 40px; font-size: 32px; font-weight: normal; display: block; text-shadow: 0px -1px 0px #f9e13e;
+}
+.headline {
+	background: rgb(6, 79, 159); margin: 0px auto; height: 83px; text-align: left; color: rgb(255, 255, 255); line-height: 83px; padding-left: 30px; font-size: 32px; font-weight: normal; display: block; text-shadow: 0px -1px 0px #000;
+}
+.headline_y {
+	background: rgb(240, 211, 28); margin: 0px auto 10px; height: 83px; text-align: left; color: rgb(0, 0, 0); line-height: 83px; padding-left: 30px; font-size: 32px; font-weight: normal; display: block; text-shadow: 0px -1px 0px #f9e13e;
+}
+.box_s {
+	background: rgb(234, 234, 234); margin: 0px auto; padding: 10px; overflow: hidden; display: block;
+}
+.linksw {
+	color: rgb(0, 0, 0); font-size: 16px; text-decoration: none; cursor: pointer;
+}
+.linksw:hover {
+	color: rgb(0, 0, 0); font-size: 16px; text-decoration: underline; cursor: pointer;
+}
+.box {
+	padding: 10px 5px; margin-bottom: 5px; display: block; min-height: 100px;
+}
+a.accmenu {
+	background: url("images/arrow2.png") no-repeat 15px 50% rgb(6, 79, 159); transition:background 250ms ease-in-out; width: 260px; height: 40px; text-align: left; color: rgb(255, 255, 255); line-height: 40px; padding-left: 50px; font-size: 20px; text-decoration: none; margin-top: 2px; border-right-color: rgb(240, 211, 28); border-right-width: 10px; border-right-style: solid; display: block;
+}
+a.accmenu:visited {
+	background: url("images/arrow2.png") no-repeat 15px 50% rgb(6, 79, 159); transition:background 250ms ease-in-out; width: 260px; height: 40px; text-align: left; color: rgb(255, 255, 255); line-height: 40px; padding-left: 50px; font-size: 20px; text-decoration: none; margin-top: 2px; border-right-color: rgb(240, 211, 28); border-right-width: 10px; border-right-style: solid; display: block;
+}
+a.accmenu:hover {
+	background: url("images/arrow2.png") no-repeat 18px 50% rgb(20, 41, 154); transition:background 250ms ease-in-out; width: 260px; height: 40px; text-align: left; color: rgb(255, 255, 255); line-height: 40px; padding-left: 50px; font-size: 20px; text-decoration: none; margin-top: 2px; border-right-color: rgb(240, 211, 28); border-right-width: 10px; border-right-style: solid; display: block;
+}
+a.accmenu:active {
+	background: url("images/arrow2.png") no-repeat 18px 50% rgb(20, 41, 154); transition:background 250ms ease-in-out; width: 260px; height: 40px; text-align: left; color: rgb(255, 255, 255); line-height: 40px; padding-left: 50px; font-size: 20px; text-decoration: none; margin-top: 2px; border-right-color: rgb(240, 211, 28); border-right-width: 10px; border-right-style: solid; display: block;
+}
+p {
+	line-height: 18px;
+}
+#fline {
+	background: url("images/ff.png") no-repeat 50% 50%; margin: 5px auto; width: 100%; height: 80px; min-width: 1050px;
+}
+footer {
+	background: rgb(6, 79, 159); width: 100%; height: 180px; border-top-color: rgb(240, 211, 28); border-top-width: 15px; border-top-style: solid; min-width: 1050px; text-shadow: 0px -1px 0px #000;
+}
+.footerup {
+	margin: 40px auto 0px; width: 888px; height: 34px; text-align: center; line-height: 34px; font-size: 18px; display: block;
+}
+.copy {
+	margin: 15px auto; width: 500px; height: 38px; text-align: center; color: rgb(255, 255, 255); line-height: 38px; font-size: 18px; display: block; text-shadow: 0px -1px 0px #000;
+}
+.links {
+	margin: 0px 11px; color: rgb(255, 255, 255); font-size: 20px; text-decoration: none; cursor: pointer;
+}
+.links:hover {
+	margin: 0px 11px; color: rgb(255, 255, 255); font-size: 20px; text-decoration: underline; cursor: pointer;
+}
+.b_line {
+	margin: 1px auto; width: 284px; height: 24px; text-align: left; color: rgb(0, 0, 0); line-height: 24px; font-size: 14px; display: block;
+}
+.g_line {
+	margin: 1px auto; width: 284px; height: 24px; text-align: left; color: rgb(0, 0, 0); line-height: 24px; font-size: 14px; display: block;
+}
+.g_txt {
+	padding: 0px; width: 175px; text-align: right; font-weight: bold; float: right;
+}
+#s_bar {
+	margin: 0px auto; width: 1048px; height: 88px; overflow: hidden; display: block;
+}
+a.sbutton {
+	background: url("images/arrow.png") no-repeat 30px 50% rgb(20, 41, 154); margin: 0px 3px; transition:background 250ms ease-in-out; width: 170px; height: 88px; text-align: left; color: rgb(255, 255, 255); line-height: 88px; padding-left: 86px; font-size: 18px; text-decoration: none; display: inline-block;
+}
+a.sbutton:visited {
+	background: url("images/arrow.png") no-repeat 30px 50% rgb(20, 41, 154); margin: 0px 3px; transition:background 250ms ease-in-out; width: 170px; height: 88px; text-align: left; color: rgb(255, 255, 255); line-height: 88px; padding-left: 86px; font-size: 18px; text-decoration: none; display: inline-block;
+}
+a.sbutton:hover {
+	background: url("images/arrow.png") no-repeat 30px 50% rgb(255, 220, 0); margin: 0px 3px; transition:background 250ms ease-in-out; width: 170px; height: 88px; text-align: left; color: rgb(0, 0, 0); line-height: 88px; padding-left: 86px; font-size: 18px; text-decoration: none; display: inline-block;
+}
+a.sbutton:active {
+	background: url("images/arrow.png") no-repeat 30px 50% rgb(255, 220, 0); margin: 0px 3px; transition:background 250ms ease-in-out; width: 170px; height: 88px; text-align: left; color: rgb(0, 0, 0); line-height: 88px; padding-left: 86px; font-size: 18px; text-decoration: none; display: inline-block;
+}
+#plans_bar {
+	margin: 0px auto 10px; width: 660px; height: 100%; overflow: hidden; display: block; min-height: 200px;
+}
+.plan {
+	background: url("images/plansbg.png") no-repeat rgb(242, 212, 10); margin: 2px 3px 2px 0px; transition:box-shadow 250ms ease-in-out; width: 203px; height: 153px; overflow: hidden; display: inline-block; cursor: pointer;
+}
+.plan:hover {
+	transition:box-shadow 250ms ease-in-out; box-shadow: inset 0px -10px 62px rgba(20,41,154,1);
+}
+.pname {
+	background: rgb(20, 41, 154); width: 100%; height: 30px; text-align: center; color: rgb(240, 211, 28); line-height: 30px; margin-top: 18px;
+}
+.pcont {
+	margin: 10px 7px; padding: 0px; text-align: center; overflow: hidden; display: block;
+}
+.bigtxt {
+	height: 50px; color: rgb(29, 111, 245); line-height: 50px; letter-spacing: -1px; font-size: 50px; display: block; text-shadow: 0px -1px 0px #000;
+}
+.smalltxt {
+	height: 30px; color: rgb(255, 255, 255); text-transform: uppercase; font-size: 20px; display: block; text-shadow: -1px 1px 0px #000;
+}
+#calc_bar {
+	background: rgb(20, 41, 154); width: 100%; height: 90px; overflow: hidden; display: block;
+}
+.calc_h {
+	width: 180px; height: 70px; color: rgb(255, 255, 255); text-transform: uppercase; padding-top: 15px; font-size: 18px; margin-left: 40px; float: left;
+}
+.plans_d {
+	width: 205px; color: rgb(255, 255, 255); margin-top: 8px; margin-left: 10px; float: left;
+}
+.plans_amount {
+	width: 135px; color: rgb(255, 255, 255); margin-top: 8px; float: left;
+}
+.but {
+	background: rgb(6, 79, 159); border: currentColor; transition:background 250ms ease-in-out; border-image: none; width: 130px; height: 60px; text-align: center; color: rgb(255, 255, 255); text-transform: uppercase; line-height: 60px; font-size: 16px; text-decoration: none; margin-top: 14px; display: block; cursor: pointer;
+}
+.but:hover {
+	background: rgb(240, 211, 28); border: currentColor; transition:background 250ms ease-in-out; border-image: none; height: 60px; text-align: center; color: rgb(0, 0, 0); line-height: 60px; font-family: Arial, Helvetica, sans-serif; font-size: 16px; text-decoration: none; display: block; cursor: pointer;
+}
